@@ -131,19 +131,7 @@
 
 ---
 
-#### US-11 : Recevoir des notifications de rappel
-
-**En tant que** propriétaire  **Je veux** être notifié des rappels de vaccination  **Afin de** ne pas oublier les rendez-vous importants
-
-**Critères d'acceptation :**
-- Je reçois un email/SMS 1 mois avant la date de rappel
-- Je reçois un SMS 1 semaine avant la date de rappel
-- Je peux configurer mes préférences de notification
-- Les notifications mentionnent l'animal concerné et le type de vaccin
-
----
-
-#### US-12 : Consulter la liste de mes animaux
+#### US-11 : Consulter la liste de mes animaux
 
 **En tant que** propriétaire  **Je veux** voir tous mes animaux sur un tableau de bord  **Afin d'** avoir une vue d'ensemble
 
