@@ -17,5 +17,5 @@ export function middleware(req) {
 }
 
 export const config = {
-    matcher : '/animals/:path'
+    matcher : '/animals',
 }
