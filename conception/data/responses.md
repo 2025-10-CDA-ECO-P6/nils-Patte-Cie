@@ -1,0 +1,178 @@
+## Exemples de Réponses JSON
+
+### Liste des animaux pour un vétérinaire
+
+**Endpoint :** `GET /api/veterinaire/{id}/animaux`
+
+```json
+{
+  "data": {
+    "veterinaire": {
+      "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+      "first_name": "Frantz",
+      "last_name": "Beaumont",
+      "roles": ["VETERINAIRE"]
+    },
+    "animaux": [
+      {
+        "id": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+        "name": "Rocky",
+        "age": 5,
+        "is_up_to_date": true,
+        "breed": {
+          "id": "8f14e45f-ceea-467a-9b59-4a130aa136c0",
+          "label": "Labrador",
+          "species": {
+            "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+            "label": "Chien"
+          }
+        },
+        "owner": {
+          "id": "550e8400-e29b-41d4-a716-446655440000",
+          "first_name": "Andreas",
+          "last_name": "Weber",
+          "email": "andreas.weber@email.com",
+          "roles": ["PROPRIETAIRE"]
+        },
+        "derniere_consultation": {
+          "date": "2024-11-15 14:00:00",
+          "motif": "Vaccination annuelle"
+        },
+        "prochains_vaccins": [
+          {
+            "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+            "label": "Rage",
+            "date_rappel": "2025-11-15",
+            "type": "species"
+          }
+        ]
+      }
+    ],
+    "pagination": {
+      "page_actuelle": 1,
+      "par_page": 10,
+      "total_items": 1,
+      "total_pages": 1,
+      "has_next": false
+    }
+  }
+}
+```
+
+
+---
+
+### Liste des animaux pour un propriétaire
+
+**Endpoint :** `GET /api/proprietaire/{id}/animaux`
+
+```json
+{
+  "data": {
+    "proprietaire": {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "first_name": "Andreas",
+      "last_name": "Weber",
+      "email": "andreas.weber@email.com",
+      "roles": ["PROPRIETAIRE"]
+    },
+    "animaux": [
+      {
+        "id": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+        "name": "Max",
+        "age": 5,
+        "is_up_to_date": true,
+        "breed": {
+          "id": "8f14e45f-ceea-467a-9b59-4a130aa136c0",
+          "label": "Labrador",
+          "species": {
+            "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+            "label": "Chien"
+          }
+        },
+        "derniere_consultation": {
+          "date": "2024-11-15 14:00:00",
+          "veterinaire": {
+            "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+            "first_name": "Frantz",
+            "last_name": "Beaumont"
+          }
+        },
+        "vaccinations": {
+          "effectuees": [
+            {
+              "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+              "label": "Rage",
+              "date_admin": "2024-11-15",
+              "next_due": "2025-11-15"
+            }
+          ],
+          "a_venir": [
+            {
+              "vaccin_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+              "label": "CHPPI",
+              "date_rappel": "2024-12-01",
+              "type": "species"
+            }
+          ]
+        }
+      },
+      {
+        "id": "7c9e6679-7425-40de-944b-e07fc1f90ae9",
+        "name": "Rocky",
+        "age": 7,
+        "is_up_to_date": false,
+        "breed": {
+          "id": "5a1b2c3d-4e5f-6789-0abc-def123456789",
+          "label": "Berger Allemand",
+          "species": {
+            "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+            "label": "Chien"
+          }
+        },
+        "derniere_consultation": {
+          "date": "2024-11-05 15:45:00",
+          "veterinaire": {
+            "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+            "first_name": "Frantz",
+            "last_name": "Beaumont"
+          }
+        },
+        "vaccinations": {
+          "effectuees": [
+            {
+              "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+              "label": "Rage",
+              "date_admin": "2023-12-01",
+              "next_due": "2024-12-01"
+            }
+          ],
+          "a_venir": [
+            {
+              "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+              "label": "Rage",
+              "date_rappel": "2024-12-01",
+              "type": "species",
+              "en_retard": true
+            }
+          ]
+        }
+      }
+    ],
+    "pagination": {
+      "page_actuelle": 1,
+      "par_page": 5,
+      "total_items": 2,
+      "total_pages": 1,
+      "has_next": false
+    },
+    "statistiques": {
+      "total_animaux": 2,
+      "animaux_a_jour": 1,
+      "vaccinations_en_retard": 1,
+      "prochains_rappels_30j": 1
+    }
+  }
+}
+```
+---
