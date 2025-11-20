@@ -1,8 +1,8 @@
-import {useAnimalStore} from "@/app/animals/owner/store/animalStore";
+import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 
-function AnimalsList() {
-    const animals = useAnimalStore((state) => state.animals);
-    const openModal = useAnimalStore((state) => state.openModal);
+function OwnerAnimalsList() {
+    const animals = useOwnerAnimalStore((state) => state.animals);
+    const openModal = useOwnerAnimalStore((state) => state.openModal);
 
     return (
 
@@ -41,4 +41,4 @@ function AnimalsList() {
 )
 }
 
-export default AnimalsList
+export default OwnerAnimalsList
