@@ -1,14 +1,9 @@
-import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
-import {useVetAnimalStore} from "@/app/animals/vet/animalStore";
+import {useAnimalStore} from "@/hooks/useAnimalStore";
 
-function OwnerAnimalModal({type}) {
-    if (type === 'owner') {
-        const selectedAnimal = useOwnerAnimalStore((state)=> state.selectedAnimal);
-        const closeModal = useOwnerAnimalStore((state) => state.closeModal);
-    } else if (type === 'vet') {
-        const selectedAnimal = useVetAnimalStore((state)=> state.selectedAnimal);
-        const closeModal = useOwnerAnimalStore((state) => state.closeModal);
-    }
+function AnimalModal({type}) {
+   const useStore = useAnimalStore(type);
+   const selectedAnimal = useStore((state) => state.selectedAnimal);
+   const closeModal = useStore((state)=> state.closeModal);
 
     return (
 
@@ -36,4 +31,4 @@ function OwnerAnimalModal({type}) {
     )
 }
 
-export default OwnerAnimalModal
+export default AnimalModal
