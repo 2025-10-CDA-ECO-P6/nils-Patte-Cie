@@ -1,10 +1,13 @@
-import animalsData from '../../../data/animalsVet.json';
+import VetPageClient from "@/Components/ClientWrappers/VetPageClient";
 
-export default function vetAnimals() {
+function vetPage() {
 
-    const nameVet = animalsData.data.veterinaire.first_name
+
 
     return (
-        <div>Bonjour {nameVet}</div>
+        <VetPageClient/>
     );
 }
+
+export default vetPage;
+
