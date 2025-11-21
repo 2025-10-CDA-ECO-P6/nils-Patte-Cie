@@ -2,8 +2,13 @@ import React from 'react'
 import Card from "@/Components/Card/Card";
 import Image from "next/image";
 import styles from './HealthRecordPresentationCard.module.css';
+import {ArrowBigRight} from "lucide-react";
+import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 
-function HealthRecordPresentationCard({selectedAnimal}) {
+function HealthRecordPresentationCard({selectedAnimal, implemType = 'modal'}) {
+
+    const openModal = useOwnerAnimalStore((state) => state.openModal)
+
     return (
         <div className={styles.headerCard}>
             <Card>
@@ -11,7 +16,7 @@ function HealthRecordPresentationCard({selectedAnimal}) {
                     <div className={styles.animalHeader}>
                         <Image
                             className={styles.animalImage}
-                            src={"/images/chienfigma.png"}
+                            src={selectedAnimal.image_path || '/images/chienfigma.png'}
                             alt={selectedAnimal.name}
                             width={120}
                             height={120}
@@ -35,6 +40,14 @@ function HealthRecordPresentationCard({selectedAnimal}) {
                         </div>
                     </div>
                 </Card.Header>
+                {implemType === 'list' && (
+                    <Card.Footer>
+                        <div className={styles.footerCard}>
+                            <button onClick={() => openModal(selectedAnimal)}>Voir les details</button>
+                        </div>
+
+                    </Card.Footer>
+                )}
             </Card>
         </div>
     )
