@@ -1,0 +1,28 @@
+.infoCard {
+    height: 100%;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffffff;
+}
+
+.cardTitle h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    flex: 1;
+}
+
+.allergiesText {
+    color: #dc2626;
+    font-weight: 500;
+    margin: 0;
+}
+
+.noData {
+    color: #9ca3af;
+    font-style: italic;
+    margin: 0;
+}

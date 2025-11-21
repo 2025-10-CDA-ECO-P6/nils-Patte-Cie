@@ -1,0 +1,60 @@
+.consultationsCard {
+    grid-column: 1 / -1;
+}
+
+.cardTitle {
+    color: #ffffff;
+}
+
+.consultationsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.consultationItem {
+    padding: 1rem;
+    border-radius: 8px;
+    background: #f9fafb;
+    border-left: 3px solid #3b82f6;
+}
+
+.consultationHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.consultationDate {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.consultationType {
+    background: #dbeafe;
+    color: #1e40af;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.consultationVet {
+    color: #6b7280;
+    margin: 0.25rem 0;
+    font-size: 0.875rem;
+}
+
+.consultationNotes {
+    margin: 0.5rem 0 0 0;
+    color: #4b5563;
+    font-style: italic;
+}
+
+
+.consultationTraitement {
+    margin: 0.5rem 0 0 0;
+    color: rgba(105, 214, 210, 0.93);
+    font-style: italic;
+}
