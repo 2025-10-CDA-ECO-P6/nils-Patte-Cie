@@ -4,10 +4,8 @@ import AnimalHealthRecord from "@/Components/AnimalHealthRecord/AnimalHealthReco
 
 function AnimalModal() {
 
-    const selectedAnimal = useOwnerAnimalStore((state) => state.selectedAnimal);
-    const closeModal = useOwnerAnimalStore((state) => state.closeModal);
 
-        console.log(selectedAnimal);
+
 
     return (
         <div className="modal-container">
