@@ -1,10 +1,7 @@
 import { useOwnerAnimalStore } from "@/app/animals/owner/store/animalStore";
-import Card from "@/Components/Card/Card";
-
-import { X, Calendar, Syringe, AlertCircle, Stethoscope } from "lucide-react";
+import { X } from "lucide-react";
 import styles from './AnimalHealthRecord.module.css';
-import HealthRecordPresentationCard
-    from "@/Components/AnimalHealthRecord/HealthRecordPresentationCard/HealthRecordPresentationCard";
+import HealthRecordPresentationCard from "@/Components/AnimalHealthRecord/HealthRecordPresentationCard/HealthRecordPresentationCard";
 import CardsGrid from "@/Components/AnimalHealthRecord/CardsGrid/CardsGrid";
 import VaccinationCard from "@/Components/AnimalHealthRecord/Vaccination/VaccinationCard";
 import ConsultationsHistoryCard from "@/Components/AnimalHealthRecord/ConsultationsHistory/ConsultationsHistoryCard";
