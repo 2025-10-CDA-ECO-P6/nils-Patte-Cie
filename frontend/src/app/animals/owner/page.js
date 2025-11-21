@@ -3,9 +3,9 @@ import OwnerPageClient from "@/Components/ClientWrappers/OwnerPageClient";
 function OwnerPage() {
 
     return (
-        <div className="page-container">
+        <main className="page-container">
             <OwnerPageClient/>
-        </div>
+        </main>
     )
 }
 
