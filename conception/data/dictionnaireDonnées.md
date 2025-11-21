@@ -59,11 +59,13 @@
 | name | VARCHAR | 100 | NOT NULL | Nom de l'animal | Max |
 | age | INT | - | NULL | Âge de l'animal en années | 5 |
 | allergies | TEXT | - | NULL | Liste des allergies connues de l'animal | Allergie aux protéines de bœuf, pollen |
+| image_path | VARCHAR | 500 | NULL | Chemin de stockage de la photo de l'animal | /uploads/animals/2024/11/max_photo.jpg |
 | is_up_to_date | BOOLEAN | - | NOT NULL, DEFAULT TRUE | Vaccins à jour | TRUE |
 | created_at | DATETIME | - | NOT NULL, DEFAULT CURRENT_TIMESTAMP | Date d'enregistrement | 2022-03-20 11:45:00 |
 | updated_at | DATETIME | - | NOT NULL, DEFAULT CURRENT_TIMESTAMP ON UPDATE | Date de dernière modification | 2024-10-05 16:30:00 |
 
 ---
+
 
 ## Table SPECIES (Espèce)
 
