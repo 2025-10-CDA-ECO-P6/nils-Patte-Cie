@@ -1,0 +1,375 @@
+{
+  "data": {
+    "proprietaire": {
+      "id": "550e8400-e29b-41d4-a716-446655440000",
+      "first_name": "Andreas",
+      "last_name": "Weber",
+      "email": "andreas.weber@email.com",
+      "roles": ["PROPRIETAIRE"]
+    },
+    "animaux": [
+      {
+        "id": "7c9e6679-7425-40de-944b-e07fc1f90ae7",
+        "name": "Max",
+        "image_path" : "/images/chienfigma.png" ,
+        "age": 5,
+        "allergies": null,
+        "is_up_to_date": true,
+        "breed": {
+          "id": "8f14e45f-ceea-467a-9b59-4a130aa136c0",
+          "label": "Labrador",
+          "species": {
+            "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+            "label": "Chien"
+          }
+        },
+        "derniere_consultation": {
+          "date": "2024-11-15 14:00:00",
+          "veterinaire": {
+            "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+            "first_name": "Frantz",
+            "last_name": "Beaumont"
+          }
+        },
+        "consultations": [
+          {
+            "id": "a3bb189e-8bf9-3888-9912-ace4e6543002",
+            "date": "2024-11-15 14:00:00",
+            "motif": "Vaccination annuelle et contrôle général",
+            "diagnostic": "Animal en bonne santé, vaccins à jour",
+            "traitement": "Antiparasitaire (1 comprimé/mois pendant 3 mois)",
+            "observations": "Légère surcharge pondérale, recommandation de régime",
+            "veterinaire": {
+              "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+              "first_name": "Frantz",
+              "last_name": "Beaumont"
+            },
+            "vaccinations": [
+              {
+                "id": "c56a4180-65aa-42ec-a945-5fd21dec0538",
+                "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+                "label": "Rage",
+                "date_administration": "2024-11-15",
+                "date_rappel": "2025-11-15",
+                "numero_lot": "LOT2024-VR-0156",
+                "observations": "Aucune réaction adverse observée",
+                "est_effectue": true
+              }
+            ],
+            "documents": [
+              {
+                "id": "b4962a84-6cdb-4d3a-9c5f-123456789abc",
+                "chemin_fichier": "/uploads/documents/2024/11/radio_max_20241115.pdf",
+                "type_fichier": "pdf"
+              }
+            ]
+          },
+          {
+            "id": "b2cc289f-9cg0-4999-0a23-bdf5f7654113",
+            "date": "2024-05-20 10:30:00",
+            "motif": "Contrôle de routine",
+            "diagnostic": "État général excellent",
+            "traitement": null,
+            "observations": "Poids idéal maintenu",
+            "veterinaire": {
+              "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+              "first_name": "Frantz",
+              "last_name": "Beaumont"
+            },
+            "vaccinations": [],
+            "documents": []
+          },
+          {
+            "id": "c3dd390g-0dh1-5aaa-1b34-ceg6g8765224",
+            "date": "2023-11-10 16:15:00",
+            "motif": "Vaccination annuelle",
+            "diagnostic": "Bonne santé générale",
+            "traitement": null,
+            "observations": "Recommandation d'exercice régulier",
+            "veterinaire": {
+              "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+              "first_name": "Frantz",
+              "last_name": "Beaumont"
+            },
+            "vaccinations": [
+              {
+                "id": "d67b5291-76bb-53fd-b056-6ge22efd1649",
+                "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+                "label": "Rage",
+                "date_administration": "2023-11-10",
+                "date_rappel": "2024-11-10",
+                "numero_lot": "LOT2023-VR-0089",
+                "observations": null,
+                "est_effectue": true
+              }
+            ],
+            "documents": []
+          }
+        ],
+        "vaccinations": {
+          "effectuees": [
+            {
+              "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+              "label": "Rage",
+              "date_admin": "2024-11-15",
+              "next_due": "2025-11-15"
+            }
+          ],
+          "a_venir": [
+            {
+              "vaccin_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+              "label": "CHPPI",
+              "date_rappel": "2024-12-01",
+              "type": "species"
+            }
+          ]
+        }
+      },
+      {
+        "id": "7c9e6679-7425-40de-944b-e07fc1f90ae9",
+        "name": "Rocky",
+        "image_path" : "/images/berger.png",
+        "age": 7,
+        "allergies": "Allergie aux protéines de bœuf",
+        "is_up_to_date": false,
+        "breed": {
+          "id": "5a1b2c3d-4e5f-6789-0abc-def123456789",
+          "label": "Berger Allemand",
+          "species": {
+            "id": "9b1deb4d-3b7d-4bad-9bdd-2b0d7b3dcb6d",
+            "label": "Chien"
+          }
+        },
+        "derniere_consultation": {
+          "date": "2024-11-05 15:45:00",
+          "veterinaire": {
+            "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+            "first_name": "Frantz",
+            "last_name": "Beaumont"
+          }
+        },
+        "consultations": [
+          {
+            "id": "d4ee401h-1ei2-6bbb-2c45-dfh7h9876335",
+            "date": "2024-11-05 15:45:00",
+            "motif": "Boiterie patte arrière gauche",
+            "diagnostic": "Légère entorse, rien de grave",
+            "traitement": "Anti-inflammatoire pendant 5 jours, repos",
+            "observations": "Éviter les longues promenades pendant 2 semaines",
+            "veterinaire": {
+              "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+              "first_name": "Frantz",
+              "last_name": "Beaumont"
+            },
+            "vaccinations": [],
+            "documents": [
+              {
+                "id": "e5ff512i-2fj3-7ccc-3d56-egh8i0987446",
+                "chemin_fichier": "/uploads/documents/2024/11/radio_rocky_20241105.jpg",
+                "type_fichier": "jpg"
+              }
+            ]
+          },
+          {
+            "id": "f6gg623j-3gk4-8ddd-4e67-fhi9j1098557",
+            "date": "2024-06-12 09:00:00",
+            "motif": "Contrôle annuel",
+            "diagnostic": "Santé satisfaisante, légère surcharge pondérale",
+            "traitement": "Régime alimentaire adapté",
+            "observations": "Prévoir perte de 2kg sur 3 mois",
+            "veterinaire": {
+              "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+              "first_name": "Frantz",
+              "last_name": "Beaumont"
+            },
+            "vaccinations": [],
+            "documents": []
+          },
+          {
+            "id": "g7hh734k-4hl5-9eee-5f78-gij0k2109668",
+            "date": "2023-12-01 11:20:00",
+            "motif": "Vaccination antirabique",
+            "diagnostic": "Bonne santé",
+            "traitement": null,
+            "observations": "Vaccin à renouveler dans un an",
+            "veterinaire": {
+              "id": "6ba7b810-9dad-11d1-80b4-00c04fd430c8",
+              "first_name": "Frantz",
+              "last_name": "Beaumont"
+            },
+            "vaccinations": [
+              {
+                "id": "h8ii845l-5im6-0fff-6g89-hjk1l3210779",
+                "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+                "label": "Rage",
+                "date_administration": "2023-12-01",
+                "date_rappel": "2024-12-01",
+                "numero_lot": "LOT2023-VR-0112",
+                "observations": "Légère fièvre pendant 24h",
+                "est_effectue": true
+              }
+            ],
+            "documents": []
+          }
+        ],
+        "vaccinations": {
+          "effectuees": [
+            {
+              "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+              "label": "Rage",
+              "date_admin": "2023-12-01",
+              "next_due": "2024-12-01"
+            }
+          ],
+          "a_venir": [
+            {
+              "vaccin_id": "d789e456-12ab-34cd-56ef-789012345678",
+              "label": "Rage",
+              "date_rappel": "2024-12-01",
+              "type": "species",
+              "en_retard": true
+            }
+          ]
+        }
+      },
+      {
+        "id": "8d0f7780-8536-51ef-055c-f18gd2g01bf8",
+        "name": "Luna",
+        "image_path" : "/images/persan.png",
+        "age": 3,
+        "allergies": null,
+        "is_up_to_date": true,
+        "breed": {
+          "id": "6b2c3d4e-5f6g-7890-1bcd-efg234567890",
+          "label": "Persan",
+          "species": {
+            "id": "0c2efc5e-4c8e-5cbe-0cee-3c1e8c4edd7e",
+            "label": "Chat"
+          }
+        },
+        "derniere_consultation": {
+          "date": "2024-10-22 13:30:00",
+          "veterinaire": {
+            "id": "7cb8c921-0ebe-22e2-91c5-11d15ge541d9",
+            "first_name": "Marie",
+            "last_name": "Dubois"
+          }
+        },
+        "consultations": [
+          {
+            "id": "i9jj956m-6jn7-1ggg-7h90-ikl2m4321880",
+            "date": "2024-10-22 13:30:00",
+            "motif": "Vaccination et vermifuge",
+            "diagnostic": "Excellente santé",
+            "traitement": "Vermifuge administré",
+            "observations": "Pelage brillant, comportement normal",
+            "veterinaire": {
+              "id": "7cb8c921-0ebe-22e2-91c5-11d15ge541d9",
+              "first_name": "Marie",
+              "last_name": "Dubois"
+            },
+            "vaccinations": [
+              {
+                "id": "j0kk067n-7ko8-2hhh-8i01-jlm3n5432991",
+                "vaccin_id": "e890f567-23bc-45de-67fg-890123456789",
+                "label": "Typhus-Coryza",
+                "date_administration": "2024-10-22",
+                "date_rappel": "2025-10-22",
+                "numero_lot": "LOT2024-TC-0203",
+                "observations": null,
+                "est_effectue": true
+              }
+            ],
+            "documents": []
+          },
+          {
+            "id": "k1ll178o-8lp9-3iii-9j12-kmn4o6543002",
+            "date": "2024-04-18 14:45:00",
+            "motif": "Problème digestif",
+            "diagnostic": "Gastrite légère",
+            "traitement": "Pansement gastrique pendant 7 jours",
+            "observations": "Éviter la nourriture grasse",
+            "veterinaire": {
+              "id": "7cb8c921-0ebe-22e2-91c5-11d15ge541d9",
+              "first_name": "Marie",
+              "last_name": "Dubois"
+            },
+            "vaccinations": [],
+            "documents": []
+          },
+          {
+            "id": "l2mm289p-9mq0-4jjj-0k23-lno5p7654113",
+            "date": "2023-10-15 10:00:00",
+            "motif": "Vaccination annuelle",
+            "diagnostic": "Santé parfaite",
+            "traitement": null,
+            "observations": "Chat très sociable",
+            "veterinaire": {
+              "id": "7cb8c921-0ebe-22e2-91c5-11d15ge541d9",
+              "first_name": "Marie",
+              "last_name": "Dubois"
+            },
+            "vaccinations": [
+              {
+                "id": "m3nn390q-0nr1-5kkk-1l34-mop6q8765224",
+                "vaccin_id": "e890f567-23bc-45de-67fg-890123456789",
+                "label": "Typhus-Coryza",
+                "date_administration": "2023-10-15",
+                "date_rappel": "2024-10-15",
+                "numero_lot": "LOT2023-TC-0145",
+                "observations": "Aucune réaction",
+                "est_effectue": true
+              }
+            ],
+            "documents": []
+          },
+          {
+            "id": "n4oo401r-1os2-6lll-2m45-npq7r9876335",
+            "date": "2023-03-10 16:30:00",
+            "motif": "Stérilisation",
+            "diagnostic": "Opération réussie",
+            "traitement": "Antibiotiques post-opératoires pendant 5 jours",
+            "observations": "Cicatrisation normale, retrait des fils dans 10 jours",
+            "veterinaire": {
+              "id": "7cb8c921-0ebe-22e2-91c5-11d15ge541d9",
+              "first_name": "Marie",
+              "last_name": "Dubois"
+            },
+            "vaccinations": [],
+            "documents": [
+              {
+                "id": "o5pp512s-2pt3-7mmm-3n56-oqr8s0987446",
+                "chemin_fichier": "/uploads/documents/2023/03/compte_rendu_sterilisation_luna.pdf",
+                "type_fichier": "pdf"
+              }
+            ]
+          }
+        ],
+        "vaccinations": {
+          "effectuees": [
+            {
+              "vaccin_id": "e890f567-23bc-45de-67fg-890123456789",
+              "label": "Typhus-Coryza",
+              "date_admin": "2024-10-22",
+              "next_due": "2025-10-22"
+            }
+          ],
+          "a_venir": []
+        }
+      }
+    ],
+    "pagination": {
+      "page_actuelle": 1,
+      "par_page": 5,
+      "total_items": 3,
+      "total_pages": 1,
+      "has_next": false
+    },
+    "statistiques": {
+      "total_animaux": 3,
+      "animaux_a_jour": 2,
+      "vaccinations_en_retard": 1,
+      "prochains_rappels_30j": 1
+    }
+  }
+}

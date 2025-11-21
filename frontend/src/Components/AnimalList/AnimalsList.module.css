@@ -1,0 +1,31 @@
+.container {
+    height: 100%;
+}
+
+.listContainer {
+    padding: 20px;
+    margin-top: 50px;
+    height: 15vh;
+}
+
+.cardsGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pageTitle span {
+
+}
+
+.greetContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 50px
+}
+
+.greetContainer span {
+    font-style: italic;
+    color: #4b5563;
+}

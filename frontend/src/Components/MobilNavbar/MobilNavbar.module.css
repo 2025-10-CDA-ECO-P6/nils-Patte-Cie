@@ -1,0 +1,85 @@
+.navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    border-radius: 24px 24px 0 0;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    padding: 16px 24px;
+    z-index: 50;
+}
+
+
+@media (min-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+.navList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navButton {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    transition: all 0.2s ease;
+}
+
+.navButton:hover {
+    transform: scale(1.05);
+}
+
+.navButton:active {
+    transform: scale(0.95);
+}
+
+.icon {
+    color: #9ca3af;
+    transition: color 0.2s ease;
+}
+
+.iconActive {
+    color: #2563eb;
+    transition: color 0.2s ease;
+}
+
+.indicator {
+    position: absolute;
+    bottom: -12px;
+    width: 6px;
+    height: 6px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

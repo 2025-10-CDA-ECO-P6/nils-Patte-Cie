@@ -1,8 +1,5 @@
-
-
-
 export default function Home() {
   return (
-    <div></div>
+    <div>Acceuil Pattes&Co</div>
   );
 }

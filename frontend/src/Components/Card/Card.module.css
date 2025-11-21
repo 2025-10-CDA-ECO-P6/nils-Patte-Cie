@@ -1,0 +1,36 @@
+.card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card.hoverable:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.cardHeader {
+    background: #818AF9;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.cardHeader h1 h2 h3 h4 {
+    color: #f3f4f6;
+}
+
+.cardHeader Image {
+    object-fit: cover;
+}
+
+.cardBody {
+    padding: 1.5rem;
+}
+
+.cardFooter {
+    padding: 1.5rem;
+    border-top: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+}

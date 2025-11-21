@@ -1,0 +1,49 @@
+.cardsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.infoCard {
+    height: 100%;
+}
+
+.cardTitle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ffffff;
+}
+
+.cardTitle h3 {
+    color : #fff;
+    margin: 0;
+    font-size: 1.25rem;
+    flex: 1;
+}
+
+.allergiesText {
+    color: #dc2626;
+    font-weight: 500;
+    margin: 0;
+}
+
+.noData {
+    color: #9ca3af;
+    font-style: italic;
+    margin: 0;
+}
+
+.consultDate {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #4b5563;
+    margin: 0 0 0.5rem 0;
+}
+
+.vetName {
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}

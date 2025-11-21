@@ -1,0 +1,77 @@
+.vaccinCard {
+    grid-column: 1 / -1;
+}
+
+.upToDateBadge  {
+    background: #10b981;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.cardTitle {
+    color: #ffffff;
+}
+
+.vaccinationsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.vaccinSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.sectionTitle {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #6b7280;
+    margin: 0;
+    padding-bottom: 0.5rem;
+
+}
+
+.vaccinList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.vaccinItem,
+.vaccinItemUpcoming {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 8px;
+    background: #f9fafb;
+}
+
+.vaccinItemUpcoming {
+    background: #fef3c7;
+    border-left: 3px solid #f59e0b;
+}
+
+.vaccinLabel {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.vaccinDate {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+.vaccinDateUpcoming {
+    font-size: 0.875rem;
+    color: #d97706;
+    font-weight: 600;
+}
