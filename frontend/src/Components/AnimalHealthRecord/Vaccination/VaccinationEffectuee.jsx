@@ -1,8 +1,9 @@
 import styles from "@/Components/AnimalHealthRecord/Vaccination/VaccinationCard.module.css";
-import {formatDate} from "@/app/animals/owner/store/animalStore";
+import {formatDate, useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 
 
-function VaccinationEffectuee({selectedAnimal}) {
+function VaccinationEffectuee() {
+    const selectedAnimal = useOwnerAnimalStore((state)=> state.selectedAnimal);
     return (
             <>
                 <div className={styles.vaccinSection}>

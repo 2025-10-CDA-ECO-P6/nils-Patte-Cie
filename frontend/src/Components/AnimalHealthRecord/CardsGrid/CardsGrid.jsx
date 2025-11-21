@@ -8,8 +8,8 @@ function CardsGrid({selectedAnimal}) {
     return (
         <>
             <div className={styles.cardsGrid}>
-                <AllergiesCard selectedAnimal={selectedAnimal}/>
-               <LastConsultCard selectedAnimal={selectedAnimal}/>
+                <AllergiesCard />
+               <LastConsultCard/>
             </div>
         </>
     )

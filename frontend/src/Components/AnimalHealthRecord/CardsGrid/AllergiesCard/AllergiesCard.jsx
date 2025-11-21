@@ -2,8 +2,10 @@ import React from 'react'
 import styles from '@/Components/AnimalHealthRecord/CardsGrid/CardsGrid.module.css'
 import Card from "@/Components/Card/Card";
 import {AlertCircle} from "lucide-react";
+import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 
-function AllergiesCard({selectedAnimal}) {
+function AllergiesCard() {
+    const selectedAnimal = useOwnerAnimalStore((state) => state.selectedAnimal)
     return (
         <>
             <Card className={styles.infoCard}>

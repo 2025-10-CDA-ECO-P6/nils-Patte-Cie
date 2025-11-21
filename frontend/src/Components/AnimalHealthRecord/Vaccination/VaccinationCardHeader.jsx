@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from "@/Components/AnimalHealthRecord/Vaccination/VaccinationCard.module.css";
 import {Syringe} from "lucide-react";
+import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 
-function VaccinationCardHeader({selectedAnimal}) {
+function VaccinationCardHeader() {
+    const selectedAnimal = useOwnerAnimalStore((state)=> state.selectedAnimal);
     return (
         <>
             <div className={styles.cardTitle}>

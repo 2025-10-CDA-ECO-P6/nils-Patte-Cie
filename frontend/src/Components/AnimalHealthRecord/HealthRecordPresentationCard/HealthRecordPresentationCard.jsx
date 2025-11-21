@@ -5,9 +5,10 @@ import styles from './HealthRecordPresentationCard.module.css';
 import {ArrowBigRight} from "lucide-react";
 import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 
-function HealthRecordPresentationCard({selectedAnimal, implemType = 'modal'}) {
+function HealthRecordPresentationCard({selectedAnimal, implemType = 'list'}) {
 
     const openModal = useOwnerAnimalStore((state) => state.openModal)
+
 
     return (
         <div className={styles.headerCard}>

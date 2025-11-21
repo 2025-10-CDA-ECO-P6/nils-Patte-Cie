@@ -21,9 +21,9 @@ function AnimalHealthRecord() {
 
                 <div className={styles.content}>
                     <HealthRecordPresentationCard selectedAnimal={selectedAnimal}/>
-                    <CardsGrid selectedAnimal={selectedAnimal}/>
-                    <VaccinationCard selectedAnimal={selectedAnimal}/>
-                    <ConsultationsHistoryCard selectedAnimal={selectedAnimal} />
+                    <CardsGrid />
+                    <VaccinationCard />
+                    <ConsultationsHistoryCard />
                 </div>
             </div>
         </div>

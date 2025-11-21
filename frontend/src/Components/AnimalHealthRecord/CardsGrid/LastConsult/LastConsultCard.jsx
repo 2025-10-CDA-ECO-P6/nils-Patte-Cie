@@ -2,9 +2,10 @@ import React from 'react'
 import Card from "@/Components/Card/Card";
 import styles from "@/Components/AnimalHealthRecord/CardsGrid/CardsGrid.module.css";
 import {Calendar, Stethoscope} from "lucide-react";
-import {formatDate} from "@/app/animals/owner/store/animalStore";
+import {formatDate, useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 
-function LastConsultCard({selectedAnimal}) {
+function LastConsultCard() {
+    const selectedAnimal = useOwnerAnimalStore((state) => state.selectedAnimal);
     return (
         <>
             <Card className={styles.infoCard}>

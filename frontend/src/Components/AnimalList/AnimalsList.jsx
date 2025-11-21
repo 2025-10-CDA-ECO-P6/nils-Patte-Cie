@@ -7,7 +7,6 @@ function AnimalsList() {
 
     const animals = useOwnerAnimalStore((state) => state.animals);
     const owner = useOwnerAnimalStore((state) => state.owner);
-
     return (
         <div className={styles.listContainer}>
            <div className={styles.greetContainer}>

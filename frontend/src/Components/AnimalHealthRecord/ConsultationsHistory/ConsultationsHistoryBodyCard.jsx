@@ -1,11 +1,12 @@
 import styles from "@/Components/AnimalHealthRecord/ConsultationsHistory/ConsultationHistoryCard.module.css";
-import {formatDate} from "@/app/animals/owner/store/animalStore";
+import {formatDate, useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 import Card from "@/Components/Card/Card";
 import React from "react";
 import ConsultationHistoryListCard
     from "@/Components/AnimalHealthRecord/ConsultationsHistory/ConsultationHistoryListCard";
 
-function ConsultationsHistoryBodyCard({selectedAnimal}) {
+function ConsultationsHistoryBodyCard() {
+    const selectedAnimal = useOwnerAnimalStore((state) => state.selectedAnimal);
     return (
         <Card.Body>
             {selectedAnimal.consultations.length > 0 ? (

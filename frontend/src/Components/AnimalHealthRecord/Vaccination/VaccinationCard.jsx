@@ -5,17 +5,18 @@ import VaccinationEffectuee from "@/Components/AnimalHealthRecord/Vaccination/Va
 import VaccinationTodo from "@/Components/AnimalHealthRecord/Vaccination/VaccinationTodo";
 import VaccinationCardHeader from "@/Components/AnimalHealthRecord/Vaccination/VaccinationCardHeader";
 
-function VaccinationCard({selectedAnimal}) {
+function VaccinationCard() {
+
     return (
         <>
             <Card className={styles.vaccinCard}>
                 <Card.Header>
-                   <VaccinationCardHeader selectedAnimal={selectedAnimal}/>
+                   <VaccinationCardHeader/>
                 </Card.Header>
                 <Card.Body>
                     <div className={styles.vaccinationsGrid}>
-                       <VaccinationEffectuee selectedAnimal={selectedAnimal}/>
-                        <VaccinationTodo selectedAnimal={selectedAnimal}/>
+                       <VaccinationEffectuee/>
+                        <VaccinationTodo/>
                     </div>
                 </Card.Body>
             </Card>

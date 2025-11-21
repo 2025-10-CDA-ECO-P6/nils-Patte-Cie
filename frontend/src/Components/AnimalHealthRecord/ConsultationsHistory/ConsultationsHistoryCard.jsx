@@ -8,12 +8,12 @@ import ConsultationsHistoryHeaderCard
 import ConsultationsHistoryBodyCard
     from "@/Components/AnimalHealthRecord/ConsultationsHistory/ConsultationsHistoryBodyCard";
 
-function ConsultationsHistoryCard({selectedAnimal}) {
+function ConsultationsHistoryCard() {
     return (
         <>
             <Card className={styles.consultationsCard}>
                <ConsultationsHistoryHeaderCard/>
-                <ConsultationsHistoryBodyCard selectedAnimal={selectedAnimal}/>
+                <ConsultationsHistoryBodyCard/>
             </Card>
         </>
     )

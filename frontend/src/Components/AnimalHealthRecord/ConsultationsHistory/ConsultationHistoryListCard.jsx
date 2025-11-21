@@ -1,8 +1,9 @@
 import styles from "@/Components/AnimalHealthRecord/ConsultationsHistory/ConsultationHistoryCard.module.css";
-import {formatDate} from "@/app/animals/owner/store/animalStore";
+import {formatDate, useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 import React from "react";
 
-function ConsultationHistoryListCard({selectedAnimal}) {
+function ConsultationHistoryListCard() {
+    const selectedAnimal = useOwnerAnimalStore((state) => state.selectedAnimal);
     return (
 
         <div className={styles.consultationsList}>
