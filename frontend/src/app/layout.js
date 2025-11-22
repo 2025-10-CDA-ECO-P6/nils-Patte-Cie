@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Manrope } from "next/font/google";
 import "./globals.css";
-import MobilNavbar from "@/Components/MobilNavbar/MobilNavbar";
-import Header from "@/Components/Header/Header";
+import MobilNavbar from "@/Components/Utils/MobilNavbar/MobilNavbar";
+import Header from "@/Components/Utils/Header/Header";
 
 
 const manrope = Manrope({
