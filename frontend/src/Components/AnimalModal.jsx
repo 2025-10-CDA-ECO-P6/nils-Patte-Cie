@@ -4,8 +4,6 @@ import AnimalHealthRecord from "@/Components/AnimalHealthRecord/AnimalHealthReco
 function AnimalModal() {
 
 
-
-
     return (
         <div className="modal-container">
             <AnimalHealthRecord/>
@@ -13,4 +11,5 @@ function AnimalModal() {
 
     )
 }
+
 export default AnimalModal;
