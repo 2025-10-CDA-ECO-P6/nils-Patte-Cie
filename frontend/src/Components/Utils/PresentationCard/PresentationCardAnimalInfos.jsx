@@ -1,5 +1,5 @@
 import styles
-    from "@/Components/AnimalHealthRecord/HealthRecordPresentationCard/HealthRecordPresentationCard.module.css";
+    from "./PresentationCard.module.css";
 import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 
 function PresentationCardAnimalInfos({animal = null}) {

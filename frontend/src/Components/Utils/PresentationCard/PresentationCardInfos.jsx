@@ -1,5 +1,5 @@
 import styles
-    from "@/Components/AnimalHealthRecord/HealthRecordPresentationCard/HealthRecordPresentationCard.module.css";
+    from "./PresentationCard.module.css"
 import Image from "next/image";
 import PresentationCardAnimalInfos from "@/Components/Utils/PresentationCard/PresentationCardAnimalInfos";
 import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";

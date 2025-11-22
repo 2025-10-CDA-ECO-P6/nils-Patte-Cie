@@ -1,6 +1,5 @@
-import Card from "@/Components/Utils/Card/Card";
 import styles
-    from "@/Components/AnimalHealthRecord/HealthRecordPresentationCard/HealthRecordPresentationCard.module.css";
+    from "./PresentationCard.module.css";
 import React from "react";
 import {useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
 

@@ -1,0 +1,68 @@
+
+.headerCard {
+    background: #818AF9;
+    color: white;
+    border-radius: 12px;
+}
+.animalHeader {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.animalImage {
+    border-radius: 10%;
+    border: 4px solid white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.animalInfo {
+    flex: 1;
+}
+
+.animalName {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+}
+
+.infoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.label {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.value {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.footerCard {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    color: #1f2937;
+}
+
+.footerCard button {
+    width: fit-content;
+    cursor: pointer;
+    border-radius: 12px;
+    padding: 6px;
+    background-color: #fff;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
