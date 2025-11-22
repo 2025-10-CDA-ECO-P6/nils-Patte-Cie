@@ -1,7 +1,7 @@
 import styles from './CardsGrid.module.css'
 import AllergiesCard from "@/Components/AnimalHealthRecord/CardsGrid/AllergiesCard/AllergiesCard";
 import LastConsultCard from "@/Components/AnimalHealthRecord/CardsGrid/LastConsult/LastConsultCard";
-function CardsGrid({selectedAnimal}) {
+function CardsGrid() {
 
 
 
@@ -9,7 +9,7 @@ function CardsGrid({selectedAnimal}) {
         <>
             <div className={styles.cardsGrid}>
                 <AllergiesCard />
-               <LastConsultCard/>
+                <LastConsultCard/>
             </div>
         </>
     )

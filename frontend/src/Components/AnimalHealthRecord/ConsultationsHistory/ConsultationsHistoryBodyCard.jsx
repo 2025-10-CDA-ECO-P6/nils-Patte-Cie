@@ -1,6 +1,6 @@
 import styles from "@/Components/AnimalHealthRecord/ConsultationsHistory/ConsultationHistoryCard.module.css";
 import {formatDate, useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
-import Card from "@/Components/Card/Card";
+import Card from "@/Components/Utils/Card/Card";
 import React from "react";
 import ConsultationHistoryListCard
     from "@/Components/AnimalHealthRecord/ConsultationsHistory/ConsultationHistoryListCard";

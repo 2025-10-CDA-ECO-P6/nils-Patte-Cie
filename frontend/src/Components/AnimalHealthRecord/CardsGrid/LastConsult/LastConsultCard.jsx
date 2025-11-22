@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from "@/Components/Card/Card";
+import Card from "@/Components/Utils/Card/Card";
 import styles from "@/Components/AnimalHealthRecord/CardsGrid/CardsGrid.module.css";
 import {Calendar, Stethoscope} from "lucide-react";
 import {formatDate, useOwnerAnimalStore} from "@/app/animals/owner/store/animalStore";
