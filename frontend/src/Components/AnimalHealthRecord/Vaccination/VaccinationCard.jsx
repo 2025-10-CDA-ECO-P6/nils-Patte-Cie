@@ -1,4 +1,4 @@
-import Card from "@/Components/Card/Card";
+import Card from "@/Components/Utils/Card/Card";
 import styles from './VaccinationCard.module.css'
 import {Syringe} from "lucide-react";
 import VaccinationEffectuee from "@/Components/AnimalHealthRecord/Vaccination/VaccinationEffectuee";

@@ -9,7 +9,7 @@ function CardsGrid({selectedAnimal}) {
         <>
             <div className={styles.cardsGrid}>
                 <AllergiesCard />
-               <LastConsultCard/>
+                <LastConsultCard/>
             </div>
         </>
     )
